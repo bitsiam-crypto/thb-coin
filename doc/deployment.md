@@ -32,8 +32,8 @@ available, but can only be called once per proxy.
 
 ## Deploying a Proxy:
 
-1. Obtain addresses for the various contract roles from bitSiam ops. The keys for
-   these addresses will be stored offline. The address needed are:
+1. Obtain addresses for the various contract roles from bitSiam ops. The keys
+   for these addresses will be stored offline. The address needed are:
 
    ```
    admin

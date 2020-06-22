@@ -36,9 +36,9 @@ some changes:
 ## Issuing and Destroying tokens
 
 The Fiat Token allows multiple entities to create and destroy tokens. These
-entities will have to be members of bitSiam, and will be vetted by bitSiam before
-they are allowed to create new tokens. bitSiam will not mint any tokens itself,
-it will approve members to mint and burn tokens.
+entities will have to be members of bitSiam, and will be vetted by bitSiam
+before they are allowed to create new tokens. bitSiam will not mint any tokens
+itself, it will approve members to mint and burn tokens.
 
 Each `minter` has a `mintingAllowance`, which bitSiam configures. The
 `mintingAllowance` is how many tokens that minter may issue, and as a `minter`
@@ -115,8 +115,8 @@ tokens, approve, mint, or burn tokens.
 
 ### Adding a blacklisted address
 
-bitSiam blacklists an address via the `blacklist` method. The specified `account`
-will be added to the blacklist.
+bitSiam blacklists an address via the `blacklist` method. The specified
+`account` will be added to the blacklist.
 
 - Only the `blacklister` role may call `blacklist`.
 - Blacklisting emits a `Blacklist(account)` event
@@ -164,8 +164,8 @@ The Fiat Token uses the zeppelinos Unstructured-Storage Proxy pattern
 [FiatTokenV1.sol](../contracts/FiatTokenV1.sol) is the implementation, the
 actual token will be a Proxy contract
 ([FiatTokenProxy.sol](../contracts/FiatTokenProxy.sol)) which will forward all
-calls to `FiatToken` via delegatecall. This pattern allows bitSiam to upgrade the
-logic of any deployed tokens seamlessly.
+calls to `FiatToken` via delegatecall. This pattern allows bitSiam to upgrade
+the logic of any deployed tokens seamlessly.
 
 - bitSiam will upgrade the token via a call to `upgradeTo` or `upgradeToAndCall`
   if initialization is required for the new version.
