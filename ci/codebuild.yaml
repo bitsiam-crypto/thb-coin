@@ -1,19 +1,19 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: CI for Centre Tokens
+Description: CI for THB Coin
 Parameters:
 
   StackName:
-    Default: ci-centre-tokens
+    Default: ci-thb-coin
     Type: String
     Description: Cloudformation stack name
 
   GithubRepoOwner:
-    Default: centrehq
+    Default: bitsiam-crypto
     Type: String
     Description: Github Owner
 
   GithubRepo:
-    Default: centre-tokens
+    Default: thb-coin
     Type: String
     Description: Github repository name
 
@@ -33,7 +33,7 @@ Resources:
   CodeBuildProject:
     Type: "AWS::CodeBuild::Project"
     Properties:
-      Name: "centre-tokens"
+      Name: "thb-coin"
       Description: !Sub "Codebuild project from stack ${AWS::StackName}"
       Artifacts:
         Type: S3
@@ -90,7 +90,7 @@ Resources:
                   - "logs:CreateLogStream"
                   - "logs:PutLogEvents"
                 Resource:
-                  - !Sub "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/centre-tokens:log-stream:*"
+                  - !Sub "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/thb-coin:log-stream:*"
               - Sid: "AllowPutToBucket"
                 Effect: "Allow"
                 Action:

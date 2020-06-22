@@ -1,6 +1,6 @@
-# centre-tokens
+# THB Coin
 
-Fiat tokens on the [CENTRE](https://centre.io) network.
+Fiat tokens on the bitSiam network.
 
 ## Setup
 
@@ -10,8 +10,8 @@ Requirements:
 - Yarn
 
 ```
-$ git clone git@github.com:centrehq/centre-tokens.git
-$ cd centre-tokens
+$ git clone git@github.com:bitsiam-crypto/thb-coin.git
+$ cd thb-coin
 $ npm i -g yarn       # Install yarn if you don't already have it
 $ yarn install        # Install dependencies
 $ yarn setup          # Setup Git hooks

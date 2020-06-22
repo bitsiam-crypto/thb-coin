@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.6.8;
 
 // File: zos-lib/contracts/upgradeability/Proxy.sol
 
@@ -316,7 +316,7 @@ contract AdminUpgradeabilityProxy is UpgradeabilityProxy {
 * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-pragma solidity ^0.4.24;
+pragma solidity ^0.6.8;
 
 
 /**
@@ -325,5 +325,5 @@ pragma solidity ^0.4.24;
 */
 contract FiatTokenProxy is AdminUpgradeabilityProxy {
     constructor(address _implementation) public AdminUpgradeabilityProxy(_implementation) {
-    }
+  }
 }

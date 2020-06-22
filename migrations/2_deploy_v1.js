@@ -2,12 +2,13 @@ const FiatTokenV1 = artifacts.require("FiatTokenV1");
 const FiatTokenProxy = artifacts.require("FiatTokenProxy");
 
 // Any address will do, preferably one we generated
-const throwawayAddress = "0x64e078a8aa15a41b85890265648e965de686bae6";
+const throwawayAddress = "0xF7259090c88e43ABE4cA01689Abd793D30B77aEa";
 
 module.exports = async (deployer, network) => {
   let admin, masterMinter, pauser, blacklister, owner;
 
   if (network.toLowerCase().includes("mainnet")) {
+    require("dotenv").config();
     const {
       ADMIN_ADDRESS,
       MASTERMINTER_ADDRESS,
@@ -39,11 +40,11 @@ module.exports = async (deployer, network) => {
     // Do not use these addresses for mainnet - these are the deterministic
     // addresses from ganache, so the private keys are well known and match the
     // values we use in the tests
-    admin = "0x2F560290FEF1B3Ada194b6aA9c40aa71f8e95598";
-    masterMinter = "0x3E5e9111Ae8eB78Fe1CC3bb8915d5D461F3Ef9A9";
-    pauser = "0xACa94ef8bD5ffEE41947b4585a84BdA5a3d3DA6E";
-    blacklister = "0xd03ea8624C8C5987235048901fB614fDcA89b117";
-    owner = "0xE11BA2b4D45Eaed5996Cd0823791E0C93114882d";
+    admin = "0xA07aFe33D4B471e0456dEe2632DbC7a5c515bb5C";
+    masterMinter = "0x49D58f1A1a922596C00E38209Ae8aE33EC5a4F5A";
+    pauser = "0x31243ee85931709926c2a8a7Eb6BE3b615B27CeE";
+    blacklister = "0x80c379C1326286914867D2EFE270e7F72fcc1fc8";
+    owner = "0x07238d79890931a1C1107A979AFeCBA26E90ec1B";
   }
 
   console.log("Deploying implementation contract...");
@@ -78,9 +79,9 @@ module.exports = async (deployer, network) => {
   // Pretend that the proxy address is a FiatTokenV1 - this is fine because the
   // proxy will forward all the calls to the FiatTokenV1 impl
   await fiatTokenV1Proxied.initialize(
-    "USD//C",
-    "USDC",
-    "USD",
+    "THB Coin",
+    "THBC",
+    "THB",
     6,
     masterMinter,
     pauser,

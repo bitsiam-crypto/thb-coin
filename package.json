@@ -1,7 +1,7 @@
 {
-  "name": "centre-tokens",
+  "name": "thb-coin",
   "version": "1.0.0",
-  "description": "Fiat and non-fiat tokens part of the CENTRE network.",
+  "description": "Fiat and non-fiat tokens part of the bitSiam network.",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -22,15 +22,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/centrehq/centre-tokens.git"
+    "url": "git+https://github.com/bitsiam-crypto/thb-coin.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/centrehq/centre-tokens/issues"
+    "url": "https://github.com/bitsiam-crypto/thb-coin/issues"
   },
-  "homepage": "https://github.com/centrehq/centre-tokens#readme",
+  "homepage": "https://github.com/bitsiam-crypto/thb-coin#readme",
   "dependencies": {},
   "devDependencies": {
     "@openzeppelin/contracts": "^3.0.1",
@@ -42,6 +42,7 @@
     "@typescript-eslint/parser": "^2.33.0",
     "chai": "^4.2.0",
     "diff": "^4.0.2",
+    "dotenv": "^8.2.0",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
@@ -62,6 +63,7 @@
     "solhint": "^3.0.0",
     "solidity-coverage": "^0.7.5",
     "truffle": "^5.1.24",
+    "truffle-plugin-verify": "^0.3.11",
     "ts-node": "^8.10.1",
     "typechain": "^2.0.0",
     "typescript": "^3.9.2",

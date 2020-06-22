@@ -1,23 +1,23 @@
 // Address of the FiatToken Implementation
-const fiatTokenAddress = "0x0882477e7895bdc5cea7cb1552ed914ab157fe56";
+const fiatTokenAddress = "0xfdD130FfF15B6dBEF3fDE58f5079821F79c10dD1f";
 
 // Address of the FiatToken Proxy
-const fiatTokenProxyAddress = "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48";
+const fiatTokenProxyAddress = "0x1B7d4E48658eC8a892Dc04643Ba50d01BdA4BC5D";
 
 // role addresses
-const MASTER_MINTER = 0x1500a138523709ce66c8b9abe678abc1b6c5a7b7;
-const PAUSER = 0xe8e13e1b6d363c270ef3a5ab466ebad8326311bb;
-const UPGRADER = 0x69005ff70072c57547dc44ea975d85ea60e5b196;
-const OWNER = 0xa61e278899a8553d93d14eb19ba2791e05069e87;
-const BLACKLISTER = 0x063d13783a0a2ce65b1ca00d9e897e6c8b1ec86b;
+const MASTER_MINTER = "0x49D58f1A1a922596C00E38209Ae8aE33EC5a4F5A";
+const PAUSER = "0x31243ee85931709926c2a8a7Eb6BE3b615B27CeE";
+const UPGRADER = "0x69005ff70072c57547dc44ea975d85ea60e5b196";
+const OWNER = "0x07238d79890931a1C1107A979AFeCBA26E90ec1B";
+const BLACKLISTER = "0x80c379C1326286914867D2EFE270e7F72fcc1fc8";
 
 // Addresses of known minters - currently fake minters
 // If replacing with real minters need to modify printMinterInfo
 const minters = ["0x0000", "0x0001"];
 
-const NAME = "USD//C";
-const SYMBOL = "USDC";
-const CURRENCY = "USD";
+const NAME = "THB Coin";
+const SYMBOL = "THBC";
+const CURRENCY = "THB";
 const DECIMALS = 6;
 const TOTALSUPPLY = 0;
 const PAUSED = false;

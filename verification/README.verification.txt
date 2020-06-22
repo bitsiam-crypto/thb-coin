@@ -86,7 +86,7 @@ Pending Tests:
   2) Press the blue 'ENABLE THE GOOGLE SHEETS API' button.
 
   3) Enter a project name (i.e. 'spreadsheet-verification') and product name
-  (i.e 'centre-tokens') and download the credentials.json file.
+  (i.e 'thb-coin') and download the credentials.json file.
 
   4) Move your credentials.json file into the verification/GoogleSheets folder.
 
